@@ -1,0 +1,47 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fdfcfb;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #333;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+    padding-left: 20px;
+}
+
+section {
+    padding: 20px;
+}
+
+.experience-item, .education-item {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    background-color: #fafafa;
+    width: 80%;
+    margin-left: 10%;
+}
+
+img.boat-animation {
+    max-width: 100px;
+    position: absolute;
+    top: 100px;
+    left: 40%;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
