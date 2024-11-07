@@ -41,6 +41,15 @@ img.boat-animation {
     left: 40%;
 }
 
+.boat-animation {
+    position: absolute;
+    top: 0;
+    right: 15%; /* Align with the SVG container */
+    transition: transform 0.1s linear;
+}
+
+
+
 footer {
     text-align: center;
     padding: 20px;
