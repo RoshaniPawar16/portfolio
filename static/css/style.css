@@ -26,7 +26,7 @@ section {
 
 /* About Section Styling */
 .about-section {
-    padding: 120px 0; /* Increased top padding */
+    padding: 150px 0 80px; /* Increased top and bottom padding */
     background-color: #f7f5f4;
     text-align: center;
 }
@@ -34,7 +34,7 @@ section {
 .about-card {
     max-width: 800px;
     margin: 0 auto;
-    padding: 40px; /* Increased padding for more space */
+    padding: 50px; /* Additional padding inside the card */
     border-radius: 10px;
     background-color: #fafafa;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -43,33 +43,31 @@ section {
 
 .about-card h2 {
     font-size: 2.5rem;
-    margin-bottom: 30px; /* More space below the title */
+    margin-bottom: 30px;
 }
 
 .about-card p {
     font-size: 1.1rem;
     line-height: 1.6;
     color: #555;
-    margin-top: 20px; /* Additional space above each paragraph */
+    margin-top: 15px; /* More space above paragraphs */
 }
 
 /* Contact Section Styling */
 .contact-section {
-    padding: 100px 0; /* Space above and below section */
+    padding: 100px 0; /* Padding to center on the page */
     background-color: #fafafa;
     text-align: center;
 }
 
 .contact-card {
-    max-width: 800px; /* Center and expand contact card width */
-    margin: 0 auto;
+    max-width: 700px;
+    margin: 0 auto; /* Center-align */
     padding: 40px;
     border-radius: 10px;
     background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Increased shadow for more visibility */
-    border: 2px solid #c08f57;
-    color: #333;
-    text-align: left; /* Align text inside the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    border: 2px solid #c08f57; /* Border color to match the theme */
 }
 
 .contact-form input,
@@ -80,7 +78,6 @@ section {
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 1rem;
-    color: #333;
 }
 
 .contact-form button {
@@ -92,18 +89,48 @@ section {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    width: 100%;
 }
 
 .contact-form button:hover {
     background-color: #a76e45;
 }
 
+/* Outlined Email Section Below Contact */
+.email-section {
+    max-width: 700px;
+    margin: 50px auto; /* Space above and center-align */
+    padding: 20px;
+    border: 2px solid #c08f57; /* Match border color to theme */
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.email-section p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
 .social-icons {
-    margin-top: 20px;
     display: flex;
     justify-content: center;
     gap: 20px;
 }
+
+.social-icons a {
+    color: #333;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #c08f57;
+}
+
+
 
 .experience-item, .education-item {
     padding: 20px;
