@@ -27,16 +27,32 @@
                 <p class="researcher-title">AI Enthusiast • Developer • MSc AI Student</p>
             </div>
             <div class="col-md-6 text-right">
+                <!-- Desktop Navigation -->
                 <nav class="header-nav">
                     <a href="#research" class="nav-link">Research</a>
                     <a href="#projects" class="nav-link">Projects</a>
                     <a href="#experience" class="nav-link">Experience</a>
                     <a href="#contact" class="nav-link">Contact</a>
                 </nav>
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" title="Open mobile menu">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
         </div>
     </div>
 </header>
+
+<!-- Mobile Navigation -->
+<nav class="mobile-nav" id="mobileNav">
+    <button class="mobile-close" id="mobileClose" title="Close mobile menu">
+        <i class="fas fa-times"></i>
+    </button>
+    <a href="#research" class="nav-link">Research</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#experience" class="nav-link">Experience</a>
+    <a href="#contact" class="nav-link">Contact</a>
+</nav>
 
 <!-- Hero Section -->
 <section class="hero-dashboard">
@@ -122,8 +138,8 @@
                             <div>
                                 <strong>AI Auditing Methodology</strong>
                                 <span>Temporal auditing without training data access</span>
-                            </div>
-                        </div>
+        </div>
+    </div>
                     </div>
                 </div>
             </div>
@@ -181,8 +197,8 @@
                                 <div class="project-tech">
                                     <span>Python</span><span>Scikit-learn</span><span>Data Analysis</span><span>Business Intelligence</span>
                                 </div>
-                            </div>
-                        </div>
+                    </div>
+                </div>
                     </div>
                 </div>
             </div>
@@ -295,8 +311,8 @@
                             <span class="skill-tag advanced">Tableau</span>
                             <span class="skill-tag advanced">Power BI</span>
                             <span class="skill-tag intermediate">Docker</span>
-                        </div>
-                    </div>
+        </div>
+    </div>
                     
                     <div class="skill-category">
                         <h5><i class="fas fa-enterprise"></i> Enterprise Systems</h5>
@@ -328,8 +344,8 @@
                         <p>I help students adjust to university life by organizing social events and providing support when they need someone to talk to. It's rewarding work that helps build a strong community in our residence halls.</p>
                         <div class="volunteer-skills">
                             <span>Leadership</span><span>Community Building</span><span>Crisis Management</span><span>Interpersonal Skills</span>
-                        </div>
-                    </div>
+        </div>
+    </div>
 
                     <div class="volunteer-item">
                         <div class="volunteer-header">
@@ -340,8 +356,8 @@
                         <p>I've been volunteering with this organization since 2020, working on projects that help women access financial services and learn about managing money. I use my tech skills to build tools and train other volunteers on digital platforms.</p>
                         <div class="volunteer-skills">
                             <span>Financial Inclusion</span><span>Data Solutions</span><span>Training</span><span>Web Development</span>
-                        </div>
-                    </div>
+                </div>
+                </div>
                 </div>
             </div>
         </div>
@@ -350,7 +366,7 @@
         <div class="dashboard-card" id="contact">
             <div class="card-header">
                 <h3><i class="fas fa-envelope"></i> Let's Connect</h3>
-            </div>
+    </div>
             <div class="card-content">
                 <div class="row">
                     <div class="col-md-6">
@@ -361,8 +377,8 @@
                                 <i class="fas fa-envelope"></i>
                                 <span>roshani.n.pawar@gmail.com</span>
                             </a>
-                        </div>
-                        
+</div>
+
                         <div class="social-links">
                             <a href="https://linkedin.com/in/roshani-nitin-pawar" target="_blank" rel="noopener" class="social-link">
                                 <i class="fab fa-linkedin"></i>
@@ -377,14 +393,14 @@
                     </div>
                     <div class="col-md-6">
                         <form class="contact-form-mini">
-                            <input type="text" placeholder="Your Name" required>
-                            <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
                             <textarea placeholder="Quick message..." rows="3" required></textarea>
                             <button type="submit" class="btn btn-primary">
                                 <i class="fas fa-paper-plane"></i> Send Message
                             </button>
                         </form>
-                    </div>
+                </div>
                 </div>
             </div>
         </div>
@@ -435,6 +451,36 @@
         setTimeout(() => {
             darkModeToggle.style.transform = 'scale(1)';
         }, 150);
+    });
+
+    // Mobile Menu Toggle
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const mobileNav = document.getElementById('mobileNav');
+    const mobileClose = document.getElementById('mobileClose');
+
+    function openMobileMenu() {
+        mobileNav.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeMobileMenu() {
+        mobileNav.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+
+    mobileMenuToggle.addEventListener('click', openMobileMenu);
+    mobileClose.addEventListener('click', closeMobileMenu);
+
+    // Close mobile menu when clicking on nav links
+    mobileNav.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', closeMobileMenu);
+    });
+
+    // Close mobile menu when clicking outside
+    mobileNav.addEventListener('click', (e) => {
+        if (e.target === mobileNav) {
+            closeMobileMenu();
+        }
     });
 
     // Smooth scrolling for navigation links
