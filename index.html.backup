@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roshani Pawar - AI Enthusiast & Developer | Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+<!-- Dark Mode Toggle -->
+<button class="dark-mode-toggle" id="darkModeToggle" title="Toggle Dark Mode">
+    🌙
+</button>
+
+<!-- Header -->
+<header class="dashboard-header">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h1 class="researcher-name">Roshani Nitin Pawar</h1>
+                <p class="researcher-title">AI Enthusiast • Developer • MSc AI Student</p>
+            </div>
+            <div class="col-md-6 text-right">
+                <!-- Desktop Navigation -->
+                <nav class="header-nav">
+                    <a href="#research" class="nav-link">Research</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" title="Open mobile menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Mobile Navigation -->
+<nav class="mobile-nav" id="mobileNav">
+    <button class="mobile-close" id="mobileClose" title="Close mobile menu">
+        <i class="fas fa-times"></i>
+    </button>
+    <a href="#research" class="nav-link">Research</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#experience" class="nav-link">Experience</a>
+    <a href="#contact" class="nav-link">Contact</a>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-dashboard">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <div class="hero-content">
+                    <div class="status-badge">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span class="status-text">Currently: MSc AI at University of Aberdeen</span>
+                    </div>
+                    <h2 class="hero-heading">Investigating temporal biases in Large Language Models</h2>
+                    <p class="hero-description">
+                        Currently working on my dissertation about how language models handle historical content. I'm exploring patterns in how these models represent different time periods and looking for ways to make AI systems more fair and transparent.
+                    </p>
+                    <div class="availability-status">
+                        <div class="status-dot"></div>
+                        <span>Open to PhD programs and exciting opportunities</span>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#research" class="btn btn-primary">
+                            <i class="fas fa-flask"></i> View Research
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fas fa-envelope"></i> Get in Touch
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="hero-image">
+                    <img src="public/images/Profile2.jpg" alt="Roshani Pawar" class="profile-img-dashboard">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Dashboard Grid -->
+<section class="dashboard-grid">
+    <div class="container">
+        
+        <!-- Current Research Card -->
+        <div class="dashboard-card featured-card" id="research">
+            <div class="card-header">
+                <h3><i class="fas fa-microscope"></i> Research & Development Focus</h3>
+                <span class="card-status">In Progress</span>
+            </div>
+            <div class="card-content">
+                <div class="research-highlight">
+                    <h4>Vocabulary Through Time: Identifying Methodological Patterns in Temporal Distribution Analysis</h4>
+                    <div class="research-meta">
+                        <span><i class="fas fa-university"></i> University of Aberdeen</span>
+                        <span><i class="fas fa-calendar"></i> Jan 2025 - May 2025</span>
+                        <span><i class="fas fa-target"></i> PhD Foundation</span>
+                    </div>
+                    <p>Looking at how language models understand historical content and whether they have biases toward certain time periods. Using linear programming methods to analyze patterns in training data from the 1850s to 2020s. My goal is to create better ways to check AI systems for fairness without needing access to their training data.</p>
+                    
+                    <div class="research-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-brain"></i>
+                            <div>
+                                <strong>LLM Temporal Analysis</strong>
+                                <span>Analyzing temporal biases in language models</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-database"></i>
+                            <div>
+                                <strong>Historical Data Processing</strong>
+                                <span>Temporal reference dataset spanning 1850s-2020s</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-chart-line"></i>
+                            <div>
+                                <strong>Linear Programming Methods</strong>
+                                <span>Innovative approaches for temporal distribution inference</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-industry"></i>
+                            <div>
+                                <strong>AI Auditing Methodology</strong>
+                                <span>Temporal auditing without training data access</span>
+        </div>
+    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects & Experience Grid -->
+        <div class="row">
+            <!-- Projects Card -->
+            <div class="col-lg-6">
+                <div class="dashboard-card" id="projects">
+                    <div class="card-header">
+                        <h3><i class="fas fa-code"></i> Key Projects & Research</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="projects-container">
+                            <div class="project-item featured">
+                                <div class="project-header">
+                                    <h5>Vocabulary Through Time: Temporal Distribution Analysis</h5>
+                                    <span class="tech-tag research">Research</span>
+                                </div>
+                                <p>Master's dissertation analyzing temporal biases in Large Language Models. Developed methodology for temporal auditing of AI systems and created comprehensive temporal reference dataset spanning from 1850s to 2020s.</p>
+                                <div class="project-tech">
+                                    <span>Python</span><span>LLMs</span><span>Linear Programming</span><span>Temporal Analysis</span>
+                                </div>
+                            </div>
+
+                            <div class="project-item">
+                                <div class="project-header">
+                                    <h5>Healthcare Research Platform</h5>
+                                    <span class="tech-tag professional">Professional</span>
+                                </div>
+                                <p>Built a web application during my summer internship at Aberdeen to help healthcare researchers communicate with trial participants. Used ASP.NET and JavaScript to create better user interfaces and improved system performance.</p>
+                                <div class="project-tech">
+                                    <span>C#</span><span>ASP.NET</span><span>JavaScript</span><span>Healthcare IT</span>
+                                </div>
+                            </div>
+                            
+                            <div class="project-item">
+                                <div class="project-header">
+                                    <h5>Flower Detection AI</h5>
+                                    <span class="tech-tag research">Research</span>
+                                </div>
+                                <p>Created a computer vision system to automatically detect different stages of flower growth. This was part of exploring how AI could help in agriculture and precision farming.</p>
+                                <div class="project-tech">
+                                    <span>Python</span><span>TensorFlow</span><span>Computer Vision</span><span>Agriculture Tech</span>
+                                </div>
+                            </div>
+                            
+                            <div class="project-item">
+                                <div class="project-header">
+                                    <h5>Car Price Prediction System</h5>
+                                    <span class="tech-tag professional">Industry</span>
+                                </div>
+                                <p>Built a machine learning model to predict car prices using market data. Great project for learning about real-world data analysis and how to build practical ML applications.</p>
+                                <div class="project-tech">
+                                    <span>Python</span><span>Scikit-learn</span><span>Data Analysis</span><span>Business Intelligence</span>
+                                </div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience Timeline -->
+            <div class="col-lg-6">
+                <div class="dashboard-card" id="experience">
+                    <div class="card-header">
+                        <h3><i class="fas fa-briefcase"></i> Professional Journey</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="timeline-container">
+                            <div class="timeline">
+                                <div class="timeline-item current">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <h5>MSc AI Student</h5>
+                                        <span class="timeline-meta">University of Aberdeen • Jan 2024 - Present</span>
+                                        <p>Specializing in Natural Language Generation, Symbolic AI, Machine Learning, and Research Methods. Working on thesis: "Vocabulary through Time" - investigating language evolution using computational linguistics.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <h5>Placement Programmer</h5>
+                                        <span class="timeline-meta">University of Aberdeen • Jun - Aug 2024</span>
+                                        <p>Developed healthcare research systems for the Centre for Healthcare Randomised Trials. Built communication modules using ASP.NET and JavaScript, achieving 40% performance improvement in data processing systems.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <h5>Senior Systems Associate</h5>
+                                        <span class="timeline-meta">Infosys • Dec 2021 - Dec 2023</span>
+                                        <p>Collaborated with Microsoft teams on security implementations and SAP system customizations. Led containerization initiatives using Docker, improving deployment efficiency by 35%.</p>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <h5>Data Operator</h5>
+                                        <span class="timeline-meta">Sunpikt • Mar - Apr 2021</span>
+                                        <p>Oversaw backend ERP operations, ensuring data integrity and efficient processing of daily tasks. Processed and managed daily deliveries, order data, and company reports.</p>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <h5>Master of Computer Applications</h5>
+                                        <span class="timeline-meta">Savitribai Phule Pune University • July 2021 - Sept 2023</span>
+                                        <p>CGPA: 8.5/10.0. Coursework in Java, Python, Cloud Computing, Deep Learning, DevOps, Big Data, Database Management, and Software Project Management.</p>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <h5>Bachelor of Computer Applications</h5>
+                                        <span class="timeline-meta">Savitribai Phule Pune University • July 2018 - July 2021</span>
+                                        <p>CGPA: 9.6/10.0. Coursework in Android Development, C/C++, IoT, Database Management, Computer Networks, Data Structures, and Advanced Web Technologies.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills & Tools -->
+        <div class="dashboard-card">
+            <div class="card-header">
+                <h3><i class="fas fa-tools"></i> Technical Skills & Tools</h3>
+            </div>
+            <div class="card-content">
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h5><i class="fas fa-robot"></i> AI & Machine Learning</h5>
+                        <div class="skill-tags">
+                            <span class="skill-tag expert">Python</span>
+                            <span class="skill-tag advanced">Neural Networks</span>
+                            <span class="skill-tag advanced">Natural Language Generation</span>
+                            <span class="skill-tag advanced">Symbolic AI</span>
+                            <span class="skill-tag advanced">Large Language Models</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h5><i class="fas fa-code"></i> Development</h5>
+                        <div class="skill-tags">
+                            <span class="skill-tag expert">Java</span>
+                            <span class="skill-tag expert">C#</span>
+                            <span class="skill-tag expert">ASP.NET</span>
+                            <span class="skill-tag intermediate">C++</span>
+                            <span class="skill-tag intermediate">JavaScript</span>
+                            <span class="skill-tag intermediate">Angular</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h5><i class="fas fa-database"></i> Data & Cloud</h5>
+                        <div class="skill-tags">
+                            <span class="skill-tag expert">SQL</span>
+                            <span class="skill-tag expert">Database Management</span>
+                            <span class="skill-tag advanced">Microsoft Azure</span>
+                            <span class="skill-tag advanced">Tableau</span>
+                            <span class="skill-tag advanced">Power BI</span>
+                            <span class="skill-tag intermediate">Docker</span>
+        </div>
+    </div>
+                    
+                    <div class="skill-category">
+                        <h5><i class="fas fa-enterprise"></i> Enterprise Systems</h5>
+                        <div class="skill-tags">
+                            <span class="skill-tag expert">SAP ABAP</span>
+                            <span class="skill-tag expert">SAP Fiori</span>
+                            <span class="skill-tag expert">SAP S/4 HANA</span>
+                            <span class="skill-tag advanced">.NET Core</span>
+                            <span class="skill-tag advanced">DevOps</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Leadership & Volunteering -->
+        <div class="dashboard-card">
+            <div class="card-header">
+                <h3><i class="fas fa-heart"></i> Leadership & Volunteering</h3>
+            </div>
+            <div class="card-content">
+                <div class="volunteer-grid">
+                    <div class="volunteer-item current">
+                        <div class="volunteer-header">
+                            <h5>Student Resident Assistant</h5>
+                            <span class="volunteer-badge current">Current Role</span>
+                        </div>
+                        <span class="volunteer-meta">University of Aberdeen • Sept 2024 - May 2025</span>
+                        <p>I help students adjust to university life by organizing social events and providing support when they need someone to talk to. It's rewarding work that helps build a strong community in our residence halls.</p>
+                        <div class="volunteer-skills">
+                            <span>Leadership</span><span>Community Building</span><span>Crisis Management</span><span>Interpersonal Skills</span>
+        </div>
+    </div>
+
+                    <div class="volunteer-item">
+                        <div class="volunteer-header">
+                            <h5>Technical Consultant</h5>
+                            <span class="volunteer-badge social">Social Impact</span>
+                        </div>
+                        <span class="volunteer-meta">Unique Educational Foundation • May 2020 - Present</span>
+                        <p>I've been volunteering with this organization since 2020, working on projects that help women access financial services and learn about managing money. I use my tech skills to build tools and train other volunteers on digital platforms.</p>
+                        <div class="volunteer-skills">
+                            <span>Financial Inclusion</span><span>Data Solutions</span><span>Training</span><span>Web Development</span>
+                </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Card -->
+        <div class="dashboard-card" id="contact">
+            <div class="card-header">
+                <h3><i class="fas fa-envelope"></i> Let's Connect</h3>
+    </div>
+            <div class="card-content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>I love chatting about AI research, working on interesting projects, or exploring new opportunities. Feel free to reach out if you'd like to connect!</p>
+                        
+                        <div class="contact-info">
+                            <a href="mailto:roshani.n.pawar@gmail.com" class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>roshani.n.pawar@gmail.com</span>
+                            </a>
+</div>
+
+                        <div class="social-links">
+                            <a href="https://linkedin.com/in/roshani-nitin-pawar" target="_blank" rel="noopener" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/RoshaniPawar16" target="_blank" rel="noopener" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://twitter.com/cosmic_stella_" target="_blank" rel="noopener" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <form class="contact-form-mini">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                            <textarea placeholder="Quick message..." rows="3" required></textarea>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="dashboard-footer">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <p>© 2024 Roshani Nitin Pawar. Exploring AI and building cool things.</p>
+            </div>
+            <div class="col-md-6 text-right">
+                <div class="footer-links">
+                    <a href="mailto:roshani.n.pawar@gmail.com">Email</a>
+                    <a href="https://linkedin.com/in/roshani-nitin-pawar" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://github.com/RoshaniPawar16" target="_blank" rel="noopener">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script>
+    // Dark Mode Toggle
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const body = document.body;
+
+    // Check for saved theme
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        body.setAttribute('data-theme', savedTheme);
+        darkModeToggle.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+    }
+
+    darkModeToggle.addEventListener('click', () => {
+        const currentTheme = body.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        
+        body.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        darkModeToggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+        
+        // Animation
+        darkModeToggle.style.transform = 'scale(0.8)';
+        setTimeout(() => {
+            darkModeToggle.style.transform = 'scale(1)';
+        }, 150);
+    });
+
+    // Mobile Menu Toggle
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const mobileNav = document.getElementById('mobileNav');
+    const mobileClose = document.getElementById('mobileClose');
+
+    function openMobileMenu() {
+        mobileNav.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeMobileMenu() {
+        mobileNav.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+
+    mobileMenuToggle.addEventListener('click', openMobileMenu);
+    mobileClose.addEventListener('click', closeMobileMenu);
+
+    // Close mobile menu when clicking on nav links
+    mobileNav.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', closeMobileMenu);
+    });
+
+    // Close mobile menu when clicking outside
+    mobileNav.addEventListener('click', (e) => {
+        if (e.target === mobileNav) {
+            closeMobileMenu();
+        }
+    });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+    // Add scroll animations
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.animation = 'fadeInUp 0.6s ease forwards';
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.dashboard-card').forEach(card => {
+        observer.observe(card);
+    });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

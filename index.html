@@ -13,26 +13,26 @@
 </head>
 <body>
 
-<!-- Dark Mode Toggle -->
-<button class="dark-mode-toggle" id="darkModeToggle" title="Toggle Dark Mode">
-    🌙
-</button>
-
 <!-- Header -->
 <header class="dashboard-header">
     <div class="container-fluid">
         <div class="row align-items-center">
             <div class="col-md-6">
                 <h1 class="researcher-name">Roshani Nitin Pawar</h1>
-                <p class="researcher-title">AI Enthusiast • Developer • MSc AI Student</p>
+                <p class="researcher-title">AI/ML Researcher • Developer • MSc AI</p>
             </div>
             <div class="col-md-6 text-right">
                 <!-- Desktop Navigation -->
                 <nav class="header-nav">
                     <a href="#research" class="nav-link">Research</a>
                     <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#education" class="nav-link">Education</a>
                     <a href="#experience" class="nav-link">Experience</a>
                     <a href="#contact" class="nav-link">Contact</a>
+                    <span class="nav-separator"></span>
+                    <button class="dark-mode-toggle" id="darkModeToggle" title="Toggle Dark Mode">
+                        <span class="theme-icon">☀</span>
+                    </button>
                 </nav>
                 <!-- Mobile Menu Toggle -->
                 <button class="mobile-menu-toggle" id="mobileMenuToggle" title="Open mobile menu">
@@ -62,11 +62,11 @@
                 <div class="hero-content">
                     <div class="status-badge">
                         <i class="fas fa-graduation-cap"></i>
-                        <span class="status-text">Currently: MSc AI at University of Aberdeen</span>
+                        <span class="status-text">Currently: AI for Medicine Specialization (Stanford/Coursera)</span>
                     </div>
-                    <h2 class="hero-heading">Investigating temporal biases in Large Language Models</h2>
+                    <h2 class="hero-heading">Building AI Systems for Real-World Impact</h2>
                     <p class="hero-description">
-                        Currently working on my dissertation about how language models handle historical content. I'm exploring patterns in how these models represent different time periods and looking for ways to make AI systems more fair and transparent.
+                        Recently completed MSc in AI with research on temporal biases in language models. Expanding into medical AI applications while bringing 2+ years of software engineering experience building production systems. Interested in roles that bridge research and engineering—whether developing AI products or pursuing doctoral research in NLP/ML.
                     </p>
                     <div class="availability-status">
                         <div class="status-dot"></div>
@@ -94,7 +94,7 @@
 <!-- Dashboard Grid -->
 <section class="dashboard-grid">
     <div class="container">
-        
+
         <!-- Current Research Card -->
         <div class="dashboard-card featured-card" id="research">
             <div class="card-header">
@@ -145,184 +145,244 @@
             </div>
         </div>
 
-        <!-- Projects & Experience Grid -->
-        <div class="row">
-            <!-- Projects Card -->
-            <div class="col-lg-6">
-                <div class="dashboard-card" id="projects">
+        <!-- Projects Card -->
+        <div class="dashboard-card" id="projects">
                     <div class="card-header">
                         <h3><i class="fas fa-code"></i> Key Projects & Research</h3>
                     </div>
                     <div class="card-content">
                         <div class="projects-container">
                             <div class="project-item featured">
-                                <div class="project-header">
-                                    <h5>Vocabulary Through Time: Temporal Distribution Analysis</h5>
-                                    <span class="tech-tag research">Research</span>
-                                </div>
-                                <p>Master's dissertation analyzing temporal biases in Large Language Models. Developed methodology for temporal auditing of AI systems and created comprehensive temporal reference dataset spanning from 1850s to 2020s.</p>
-                                <div class="project-tech">
-                                    <span>Python</span><span>LLMs</span><span>Linear Programming</span><span>Temporal Analysis</span>
+                                <div class="project-content-wrapper">
+                                    <div class="project-text">
+                                        <div class="project-header">
+                                            <h5>Vocabulary Through Time: Temporal Distribution Analysis</h5>
+                                            <span class="tech-tag research">Research</span>
+                                        </div>
+                                        <p>Master's dissertation analyzing temporal biases in Large Language Models. Developed methodology for temporal auditing of AI systems and created comprehensive temporal reference dataset spanning from 1850s to 2020s.</p>
+                                        <div class="project-tech">
+                                            <span>Python</span><span>LLMs</span><span>Linear Programming</span><span>Temporal Analysis</span>
+                                        </div>
+                                    </div>
+                                    <a href="https://github.com/RoshaniPawar16" target="_blank" rel="noopener" class="project-image-link" title="View project on GitHub">
+                                        <div class="project-image-placeholder">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
 
                             <div class="project-item">
-                                <div class="project-header">
-                                    <h5>Healthcare Research Platform</h5>
-                                    <span class="tech-tag professional">Professional</span>
+                                <div class="project-content-wrapper">
+                                    <div class="project-text">
+                                        <div class="project-header">
+                                            <h5>Medical Imaging Analysis (AI for Medicine)</h5>
+                                            <span class="tech-tag research">Medical AI</span>
+                                        </div>
+                                        <p>Completed projects in chest X-ray classification and dermatology image analysis using TensorFlow and PyTorch. Hands-on experience with medical imaging challenges: severe class imbalance (positive cases <5%), sensitivity-specificity tradeoffs, and model interpretability for physician trust.</p>
+                                        <div class="project-tech">
+                                            <span>TensorFlow</span><span>PyTorch</span><span>Medical Imaging</span><span>Class Imbalance</span>
+                                        </div>
+                                    </div>
+                                    <a href="https://github.com/RoshaniPawar16" target="_blank" rel="noopener" class="project-image-link" title="View project on GitHub">
+                                        <div class="project-image-placeholder">
+                                            <i class="fas fa-x-ray"></i>
+                                        </div>
+                                    </a>
                                 </div>
-                                <p>Built a web application during my summer internship at Aberdeen to help healthcare researchers communicate with trial participants. Used ASP.NET and JavaScript to create better user interfaces and improved system performance.</p>
-                                <div class="project-tech">
-                                    <span>C#</span><span>ASP.NET</span><span>JavaScript</span><span>Healthcare IT</span>
+                            </div>
+
+                            <div class="project-item">
+                                <div class="project-content-wrapper">
+                                    <div class="project-text">
+                                        <div class="project-header">
+                                            <h5>OPIS IVF Success Rate Calculator</h5>
+                                            <span class="tech-tag professional">Clinical Decision Support</span>
+                                        </div>
+                                        <p>Migrated clinical decision support tool from Flask to Next.js for reproductive medicine research. OPIS predicts fertility treatment outcomes using HFEA registry data from 100,000+ cycles, incorporating patient age, ovarian reserve markers, and treatment protocols.</p>
+                                        <div class="project-tech">
+                                            <span>Next.js</span><span>React</span><span>Medical Research</span><span>Clinical Prediction</span>
+                                        </div>
+                                    </div>
+                                    <a href="https://github.com/RoshaniPawar16" target="_blank" rel="noopener" class="project-image-link" title="View project on GitHub">
+                                        <div class="project-image-placeholder">
+                                            <i class="fas fa-heartbeat"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="project-item">
+                                <div class="project-content-wrapper">
+                                    <div class="project-text">
+                                        <div class="project-header">
+                                            <h5>Clinical Trials Messaging System</h5>
+                                            <span class="tech-tag professional">Healthcare IT</span>
+                                        </div>
+                                        <p>Built automated messaging system for RCT participant communications at CHaRT. Developed Python scheduling system integrated with trial databases, reducing manual coordinator workload 40%. PostgreSQL database with encryption meeting NHS Scotland governance requirements.</p>
+                                        <div class="project-tech">
+                                            <span>Python</span><span>PostgreSQL</span><span>Clinical Trials</span><span>GDPR Compliance</span>
+                                        </div>
+                                    </div>
+                                    <a href="https://github.com/RoshaniPawar16" target="_blank" rel="noopener" class="project-image-link" title="View project on GitHub">
+                                        <div class="project-image-placeholder">
+                                            <i class="fas fa-database"></i>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                             
                             <div class="project-item">
-                                <div class="project-header">
-                                    <h5>Flower Detection AI</h5>
-                                    <span class="tech-tag research">Research</span>
-                                </div>
-                                <p>Created a computer vision system to automatically detect different stages of flower growth. This was part of exploring how AI could help in agriculture and precision farming.</p>
-                                <div class="project-tech">
-                                    <span>Python</span><span>TensorFlow</span><span>Computer Vision</span><span>Agriculture Tech</span>
+                                <div class="project-content-wrapper">
+                                    <div class="project-text">
+                                        <div class="project-header">
+                                            <h5>Flower Detection AI</h5>
+                                            <span class="tech-tag research">Research</span>
+                                        </div>
+                                        <p>Created a computer vision system to automatically detect different stages of flower growth. This was part of exploring how AI could help in agriculture and precision farming.</p>
+                                        <div class="project-tech">
+                                            <span>Python</span><span>TensorFlow</span><span>Computer Vision</span><span>Agriculture Tech</span>
+                                        </div>
+                                    </div>
+                                    <a href="https://github.com/RoshaniPawar16/Flower-Detection-using-CNN" target="_blank" rel="noopener" class="project-image-link" title="View project on GitHub">
+                                        <div class="project-image-placeholder">
+                                            <i class="fas fa-seedling"></i>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                             
                             <div class="project-item">
-                                <div class="project-header">
-                                    <h5>Car Price Prediction System</h5>
-                                    <span class="tech-tag professional">Industry</span>
-                                </div>
-                                <p>Built a machine learning model to predict car prices using market data. Great project for learning about real-world data analysis and how to build practical ML applications.</p>
-                                <div class="project-tech">
-                                    <span>Python</span><span>Scikit-learn</span><span>Data Analysis</span><span>Business Intelligence</span>
+                                <div class="project-content-wrapper">
+                                    <div class="project-text">
+                                        <div class="project-header">
+                                            <h5>Car Price Prediction System</h5>
+                                            <span class="tech-tag professional">Industry</span>
+                                        </div>
+                                        <p>Built a machine learning model to predict car prices using market data. Great project for learning about real-world data analysis and how to build practical ML applications.</p>
+                                        <div class="project-tech">
+                                            <span>Python</span><span>Scikit-learn</span><span>Data Analysis</span><span>Business Intelligence</span>
+                                        </div>
+                                    </div>
+                                    <a href="https://github.com/RoshaniPawar16/Car-price-prediction" target="_blank" rel="noopener" class="project-image-link" title="View project on GitHub">
+                                        <div class="project-image-placeholder">
+                                            <i class="fas fa-car"></i>
+                                        </div>
+                                    </a>
                                 </div>
                     </div>
                 </div>
                     </div>
+                </div>
+        </div>
+
+        <!-- Education -->
+        <div class="dashboard-card featured-card" id="education">
+            <div class="card-header">
+                <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+            </div>
+            <div class="card-content">
+                <div class="education-container">
+                <div class="education-list">
+                    <div class="education-item">
+                        <div class="education-header">
+                            <h5>AI for Medicine Specialization</h5>
+                            <span class="badge-current">In Progress</span>
+                        </div>
+                        <p class="education-meta">Stanford/Coursera • Jan 2026 - Present</p>
+                        <p>Medical imaging analysis (chest X-rays, dermatology), clinical risk prediction models, treatment effect estimation</p>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="education-header">
+                            <h5>MSc Artificial Intelligence</h5>
+                            <span class="badge-distinction">Distinction</span>
+                        </div>
+                        <p class="education-meta">University of Aberdeen • Jan 2024 - May 2025</p>
+                        <p>Coursework: Machine Learning, Deep Learning, Natural Language Processing, Computer Vision, Research Methods<br>
+                        Dissertation: "Vocabulary Through Time: Identifying Methodological Patterns in Temporal Distribution Analysis"</p>
+                    </div>
+
+                    <div class="education-item">
+                        <h5>Master of Computer Applications</h5>
+                        <p class="education-meta">Savitribai Phule Pune University • July 2021 - Sept 2023 • CGPA: 8.5/10.0</p>
+                        <p>Coursework: Java, Python, Cloud Computing, Deep Learning, DevOps, Big Data, Database Management, Software Project Management</p>
+                    </div>
+
+                    <div class="education-item">
+                        <h5>Bachelor of Computer Applications</h5>
+                        <p class="education-meta">Savitribai Phule Pune University • July 2018 - July 2021 • CGPA: 9.6/10.0</p>
+                        <p>Coursework: Android Development, C/C++, IoT, Database Management, Computer Networks, Data Structures, Advanced Web Technologies</p>
+                    </div>
+                </div>
                 </div>
             </div>
+        </div>
 
-            <!-- Experience Timeline -->
-            <div class="col-lg-6">
-                <div class="dashboard-card" id="experience">
-                    <div class="card-header">
-                        <h3><i class="fas fa-briefcase"></i> Professional Journey</h3>
-                    </div>
-                    <div class="card-content">
-                        <div class="timeline-container">
-                            <div class="timeline">
-                                <div class="timeline-item current">
-                                    <div class="timeline-dot"></div>
-                                    <div class="timeline-content">
-                                        <h5>MSc AI Student</h5>
-                                        <span class="timeline-meta">University of Aberdeen • Jan 2024 - Present</span>
-                                        <p>Specializing in Natural Language Generation, Symbolic AI, Machine Learning, and Research Methods. Working on thesis: "Vocabulary through Time" - investigating language evolution using computational linguistics.</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="timeline-item">
-                                    <div class="timeline-dot"></div>
-                                    <div class="timeline-content">
-                                        <h5>Placement Programmer</h5>
-                                        <span class="timeline-meta">University of Aberdeen • Jun - Aug 2024</span>
-                                        <p>Developed healthcare research systems for the Centre for Healthcare Randomised Trials. Built communication modules using ASP.NET and JavaScript, achieving 40% performance improvement in data processing systems.</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="timeline-item">
-                                    <div class="timeline-dot"></div>
-                                    <div class="timeline-content">
-                                        <h5>Senior Systems Associate</h5>
-                                        <span class="timeline-meta">Infosys • Dec 2021 - Dec 2023</span>
-                                        <p>Collaborated with Microsoft teams on security implementations and SAP system customizations. Led containerization initiatives using Docker, improving deployment efficiency by 35%.</p>
-                                    </div>
-                                </div>
-
-                                <div class="timeline-item">
-                                    <div class="timeline-dot"></div>
-                                    <div class="timeline-content">
-                                        <h5>Data Operator</h5>
-                                        <span class="timeline-meta">Sunpikt • Mar - Apr 2021</span>
-                                        <p>Oversaw backend ERP operations, ensuring data integrity and efficient processing of daily tasks. Processed and managed daily deliveries, order data, and company reports.</p>
-                                    </div>
-                                </div>
-
-                                <div class="timeline-item">
-                                    <div class="timeline-dot"></div>
-                                    <div class="timeline-content">
-                                        <h5>Master of Computer Applications</h5>
-                                        <span class="timeline-meta">Savitribai Phule Pune University • July 2021 - Sept 2023</span>
-                                        <p>CGPA: 8.5/10.0. Coursework in Java, Python, Cloud Computing, Deep Learning, DevOps, Big Data, Database Management, and Software Project Management.</p>
-                                    </div>
-                                </div>
-
-                                <div class="timeline-item">
-                                    <div class="timeline-dot"></div>
-                                    <div class="timeline-content">
-                                        <h5>Bachelor of Computer Applications</h5>
-                                        <span class="timeline-meta">Savitribai Phule Pune University • July 2018 - July 2021</span>
-                                        <p>CGPA: 9.6/10.0. Coursework in Android Development, C/C++, IoT, Database Management, Computer Networks, Data Structures, and Advanced Web Technologies.</p>
-                                    </div>
-                                </div>
-                            </div>
+        <!-- Professional Experience -->
+        <div class="dashboard-card featured-card" id="experience">
+            <div class="card-header">
+                <h3><i class="fas fa-briefcase"></i> Professional Experience</h3>
+            </div>
+            <div class="card-content">
+                <div class="experience-container">
+                <div class="experience-list">
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h5>Software Engineer (Medical Research)</h5>
+                            <span class="badge-current">May - July 2025</span>
                         </div>
+                        <p class="experience-meta">University of Aberdeen, Reproductive Medicine</p>
+                        <p>Migrated OPIS IVF success rate calculator from Flask to Next.js, working with reproductive medicine researchers on a clinical decision support tool used globally. Built interface for clinicians to input parameters and view personalized predictions based on 100,000+ treatment cycles.</p>
                     </div>
+
+                    <div class="experience-item">
+                        <h5>Placement Programmer</h5>
+                        <p class="experience-meta">CHaRT, University of Aberdeen • Jun - Aug 2024</p>
+                        <p>Built automated messaging system for RCT participant communications in clinical trials research unit. Developed Python scheduling system integrated with trial databases, reducing manual coordinator workload 40%. PostgreSQL database with encryption meeting NHS Scotland governance requirements.</p>
+                    </div>
+
+                    <div class="experience-item">
+                        <h5>Senior Systems Associate</h5>
+                        <p class="experience-meta">Infosys • Dec 2021 - Dec 2023</p>
+                        <p>Led agile teams (6-8 members) building enterprise data systems on Microsoft Azure platforms. Developed data pipelines using Python and .NET with Azure ML for supply chain predictive analytics.</p>
+                    </div>
+
+                    <div class="experience-item">
+                        <h5>Data Operator</h5>
+                        <p class="experience-meta">Sunpikt • Mar - Apr 2021</p>
+                        <p>Oversaw backend ERP operations, ensuring data integrity and efficient processing of daily tasks. Processed and managed daily deliveries, order data, and company reports.</p>
+                    </div>
+                </div>
                 </div>
             </div>
         </div>
 
         <!-- Skills & Tools -->
-        <div class="dashboard-card">
+        <div class="dashboard-card featured-card">
             <div class="card-header">
-                <h3><i class="fas fa-tools"></i> Technical Skills & Tools</h3>
+                <h3><i class="fas fa-tools"></i> Technical Skills</h3>
             </div>
             <div class="card-content">
-                <div class="skills-grid">
+                <div class="skills-list">
                     <div class="skill-category">
-                        <h5><i class="fas fa-robot"></i> AI & Machine Learning</h5>
-                        <div class="skill-tags">
-                            <span class="skill-tag expert">Python</span>
-                            <span class="skill-tag advanced">Neural Networks</span>
-                            <span class="skill-tag advanced">Natural Language Generation</span>
-                            <span class="skill-tag advanced">Symbolic AI</span>
-                            <span class="skill-tag advanced">Large Language Models</span>
-                        </div>
+                        <h5><i class="fas fa-code"></i> Programming</h5>
+                        <p>Python (NumPy, Pandas, Scikit-learn, SciPy, Matplotlib), SQL, Git</p>
                     </div>
-                    
+
                     <div class="skill-category">
-                        <h5><i class="fas fa-code"></i> Development</h5>
-                        <div class="skill-tags">
-                            <span class="skill-tag expert">Java</span>
-                            <span class="skill-tag expert">C#</span>
-                            <span class="skill-tag expert">ASP.NET</span>
-                            <span class="skill-tag intermediate">C++</span>
-                            <span class="skill-tag intermediate">JavaScript</span>
-                            <span class="skill-tag intermediate">Angular</span>
-                        </div>
+                        <h5><i class="fas fa-brain"></i> Machine Learning</h5>
+                        <p>TensorFlow, PyTorch, OpenCV, Statistical Modeling, Experimental Design</p>
                     </div>
-                    
+
                     <div class="skill-category">
-                        <h5><i class="fas fa-database"></i> Data & Cloud</h5>
-                        <div class="skill-tags">
-                            <span class="skill-tag expert">SQL</span>
-                            <span class="skill-tag expert">Database Management</span>
-                            <span class="skill-tag advanced">Microsoft Azure</span>
-                            <span class="skill-tag advanced">Tableau</span>
-                            <span class="skill-tag advanced">Power BI</span>
-                            <span class="skill-tag intermediate">Docker</span>
-        </div>
-    </div>
-                    
+                        <h5><i class="fas fa-server"></i> Development & Infrastructure</h5>
+                        <p>FastAPI, Docker, Azure, PostgreSQL, RESTful APIs, .NET</p>
+                    </div>
+
                     <div class="skill-category">
-                        <h5><i class="fas fa-enterprise"></i> Enterprise Systems</h5>
-                        <div class="skill-tags">
-                            <span class="skill-tag expert">SAP ABAP</span>
-                            <span class="skill-tag expert">SAP Fiori</span>
-                            <span class="skill-tag expert">SAP S/4 HANA</span>
-                            <span class="skill-tag advanced">.NET Core</span>
-                            <span class="skill-tag advanced">DevOps</span>
-                        </div>
+                        <h5><i class="fas fa-flask"></i> Research Skills</h5>
+                        <p>Literature Review, Hypothesis Testing, Data Visualization, Reproducible Workflows</p>
                     </div>
                 </div>
             </div>
@@ -349,16 +409,26 @@
 
                     <div class="volunteer-item">
                         <div class="volunteer-header">
-                            <h5>Technical Consultant</h5>
-                            <span class="volunteer-badge social">Social Impact</span>
+                            <h5>Technical Volunteer</h5>
+                            <span class="volunteer-badge social">Education</span>
                         </div>
                         <span class="volunteer-meta">Unique Educational Foundation • May 2020 - Present</span>
-                        <p>I've been volunteering with this organization since 2020, working on projects that help women access financial services and learn about managing money. I use my tech skills to build tools and train other volunteers on digital platforms.</p>
+                        <p>Built data collection and analysis tools for program evaluation at educational NGO. Developed predictive models to identify students at risk of dropout for early intervention support.</p>
                         <div class="volunteer-skills">
-                            <span>Financial Inclusion</span><span>Data Solutions</span><span>Training</span><span>Web Development</span>
+                            <span>Data Analysis</span><span>Predictive Modeling</span><span>Program Evaluation</span><span>Education Tech</span>
                 </div>
                 </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- Beyond Research Card -->
+        <div class="dashboard-card">
+            <div class="card-header">
+                <h3><i class="fas fa-palette"></i> Beyond Research</h3>
+            </div>
+            <div class="card-content">
+                <p>When I'm not training models or debugging code, I explore the world through photography and plein air painting. I find that the patience required for capturing light in watercolors translates well to the persistence needed for solving complex technical problems.</p>
             </div>
         </div>
 
@@ -377,10 +447,14 @@
                                 <i class="fas fa-envelope"></i>
                                 <span>roshani.n.pawar@gmail.com</span>
                             </a>
+                            <a href="tel:+447586475467" class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+44 7586 475467</span>
+                            </a>
 </div>
 
                         <div class="social-links">
-                            <a href="https://linkedin.com/in/roshani-nitin-pawar" target="_blank" rel="noopener" class="social-link">
+                            <a href="https://www.linkedin.com/in/roshani-nitin-pawar-32465a1aa/" target="_blank" rel="noopener" class="social-link">
                                 <i class="fab fa-linkedin"></i>
                             </a>
                             <a href="https://github.com/RoshaniPawar16" target="_blank" rel="noopener" class="social-link">
@@ -392,10 +466,10 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <form class="contact-form-mini">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                            <textarea placeholder="Quick message..." rows="3" required></textarea>
+                        <form class="contact-form-mini" action="https://formspree.io/f/xbdgrwpp" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="message" placeholder="Quick message..." rows="3" required></textarea>
                             <button type="submit" class="btn btn-primary">
                                 <i class="fas fa-paper-plane"></i> Send Message
                             </button>
@@ -417,7 +491,7 @@
             <div class="col-md-6 text-right">
                 <div class="footer-links">
                     <a href="mailto:roshani.n.pawar@gmail.com">Email</a>
-                    <a href="https://linkedin.com/in/roshani-nitin-pawar" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/roshani-nitin-pawar-32465a1aa/" target="_blank" rel="noopener">LinkedIn</a>
                     <a href="https://github.com/RoshaniPawar16" target="_blank" rel="noopener">GitHub</a>
                 </div>
             </div>
@@ -429,28 +503,23 @@
 <script>
     // Dark Mode Toggle
     const darkModeToggle = document.getElementById('darkModeToggle');
+    const themeIcon = document.querySelector('.theme-icon');
     const body = document.body;
 
     // Check for saved theme
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
         body.setAttribute('data-theme', savedTheme);
-        darkModeToggle.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+        themeIcon.textContent = savedTheme === 'dark' ? '☀' : '☽';
     }
 
     darkModeToggle.addEventListener('click', () => {
         const currentTheme = body.getAttribute('data-theme');
         const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        
+
         body.setAttribute('data-theme', newTheme);
         localStorage.setItem('theme', newTheme);
-        darkModeToggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
-        
-        // Animation
-        darkModeToggle.style.transform = 'scale(0.8)';
-        setTimeout(() => {
-            darkModeToggle.style.transform = 'scale(1)';
-        }, 150);
+        themeIcon.textContent = newTheme === 'dark' ? '☀' : '☽';
     });
 
     // Mobile Menu Toggle
