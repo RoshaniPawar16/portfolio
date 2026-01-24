@@ -718,7 +718,6 @@ p {
     padding-bottom: 2rem;
     padding-left: 1rem;
     margin-bottom: 2rem;
-    margin-left: -1rem;
     transition: border-left-color 0.3s ease;
 }
 
@@ -828,7 +827,6 @@ p {
     padding-bottom: 2rem;
     padding-left: 1rem;
     margin-bottom: 2rem;
-    margin-left: -1rem;
     transition: border-left-color 0.3s ease;
 }
 
@@ -968,7 +966,6 @@ p {
     padding-bottom: 2rem;
     padding-left: 1rem;
     margin-bottom: 2rem;
-    margin-left: -1rem;
     transition: border-left-color 0.3s ease;
 }
 
@@ -1701,7 +1698,6 @@ p {
     .education-item,
     .experience-item,
     .project-item {
-        margin-left: 0;
         padding-left: 0.75rem;
     }
 
