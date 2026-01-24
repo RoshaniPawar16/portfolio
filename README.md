@@ -1,52 +1,58 @@
-# Roshani Pawar - Portfolio Website
+# Portfolio Website
 
-A modern, responsive portfolio website showcasing my journey as an AI enthusiast, developer, and MSc AI student.
+My personal website. Built it to have a clean space to show my research and projects without the usual portfolio template bloat.
 
-## 🎯 About
+## What it does
 
-This portfolio highlights my research in temporal biases in Large Language Models, professional experience in software development, and passion for AI technology.
+Scrolling highlights the section you're reading with a blue left border. Individual items (projects, education entries, etc.) also get highlighted as you scroll through them. Dark mode works and remembers your preference. Mobile menu appears on smaller screens.
 
-## 🚀 Features
+The whole thing uses vanilla JavaScript - no frameworks beyond Bootstrap for the grid. Wanted to keep it simple and fast.
 
-- **Modern Dashboard Design**: Clean, card-based layout with smooth animations
-- **Dark/Light Mode**: Automatic system detection with manual toggle
-- **Fully Responsive**: Optimized for all devices and screen sizes
-- **Interactive Elements**: Hover effects, smooth scrolling, and engaging transitions
-- **Research Focus**: Dedicated sections for academic research and professional projects
+## Running it locally
 
-## 🛠️ Technologies Used
+```bash
+python3 -m http.server 8000
+```
 
-- **Frontend**: HTML5, CSS3, JavaScript
-- **Framework**: Bootstrap 4.5
-- **Icons**: Font Awesome 6.0
-- **Fonts**: Google Fonts (Inter, JetBrains Mono)
-- **Features**: CSS Grid, Flexbox, CSS Variables for theming
+Open `localhost:8000` in your browser.
 
-## 📱 Sections
+## Structure
 
-- **Hero**: Introduction and current research focus
-- **Research**: Detailed information about my Master's dissertation
-- **Projects**: Key technical projects and developments
-- **Experience**: Professional journey and timeline
-- **Skills**: Technical expertise and tools
-- **Leadership & Volunteering**: Community involvement and leadership roles
-- **Contact**: Get in touch section with social links
+```
+index.html          - everything is here
+static/css/style.css - all the styles
+public/images/      - just the profile photo
+```
 
-## 🌟 Highlights
+## The highlighting system
 
-- Research on temporal biases in Large Language Models
-- Experience with SAP systems, Microsoft Azure, and modern web technologies
-- Student leadership role at University of Aberdeen
-- Volunteer work in financial inclusion and education
+Wrote some JavaScript that tracks scroll position and applies CSS classes:
+- `.section-active` on the main section cards when in viewport
+- `.item-active` on individual items (education, projects, etc.)
 
-## 📧 Contact
+Uses `requestAnimationFrame` to avoid jank. Offset is 200px from top to account for the sticky header.
 
-Feel free to reach out for collaborations, opportunities, or just to chat about AI!
+## Design choices
 
-- **Email**: roshani.n.pawar@gmail.com
-- **LinkedIn**: [linkedin.com/in/roshani-nitin-pawar](https://linkedin.com/in/roshani-nitin-pawar)
-- **GitHub**: [github.com/RoshaniPawar16](https://github.com/RoshaniPawar16)
+Went with JetBrains Mono for headings because I like monospace fonts and it doesn't look too "coder-bro". Inter for body text. Blue accent color that works in both light and dark mode.
+
+No animations or transitions beyond the border highlighting. The Bay Area Post Club style is about restraint - lots of white space, clear hierarchy, no unnecessary motion.
+
+## Contact form
+
+Uses Formspree. Just sends the form data to my email. Works fine for a personal site.
+
+## Browser stuff
+
+Works in modern browsers. Tested on Chrome, Firefox, Safari. Mobile Safari can be finicky with the sticky header but it's fine.
+
+## Why I built it this way
+
+Most portfolio templates are overdesigned. I wanted something that loads fast, looks professional, and doesn't distract from the actual content. The highlighting helps readers follow along without needing a flashy design.
+
+Also wanted to own the code. When I need to update something, I can just edit the HTML directly instead of fighting with a static site generator or CMS.
 
 ---
 
-© 2024 Roshani Nitin Pawar. Exploring AI and building cool things. 
+Roshani Pawar
+roshani.n.pawar@gmail.com
