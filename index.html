@@ -349,7 +349,7 @@
         </div>
 
         <!-- Skills & Tools -->
-        <div class="dashboard-card featured-card">
+        <div class="dashboard-card featured-card" id="skills">
             <div class="card-header">
                 <h3><i class="fas fa-tools"></i> Technical Skills</h3>
             </div>
@@ -379,7 +379,7 @@
         </div>
 
         <!-- Leadership & Volunteering -->
-        <div class="dashboard-card">
+        <div class="dashboard-card featured-card" id="volunteering">
             <div class="card-header">
                 <h3><i class="fas fa-heart"></i> Leadership & Volunteering</h3>
             </div>
@@ -413,7 +413,7 @@
         </div>
 
         <!-- Beyond Research Card -->
-        <div class="dashboard-card">
+        <div class="dashboard-card featured-card" id="beyond">
             <div class="card-header">
                 <h3><i class="fas fa-palette"></i> Beyond Research</h3>
             </div>
@@ -558,7 +558,7 @@
 
     // Active navigation highlighting based on scroll position
     function initActiveNavigation() {
-        const sections = document.querySelectorAll('[id="research"], [id="projects"], [id="education"], [id="experience"], [id="contact"]');
+        const sections = document.querySelectorAll('[id="research"], [id="projects"], [id="education"], [id="experience"], [id="skills"], [id="volunteering"], [id="beyond"], [id="contact"]');
         const navLinks = document.querySelectorAll('.header-nav .nav-link[href^="#"]');
         const mobileNavLinks = document.querySelectorAll('.mobile-nav .nav-link[href^="#"]');
 
